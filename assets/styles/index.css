@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-container {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+}
+
+.navbar-container .logo h3 {
+    width: 150px;
+}
+
+.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.navbar-container .nav-list li:hover a {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+}
+
+.jumbotron {
+    margin-top: 20vh;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron .jumbotron-description {
+    flex: 1 1;
+}
+
+.jumbotron .jumbotron-description h1 {
+    font-size: 3.5rem;
+    margin-block: 1rem;
+}
+
+.jumbotron .jumbotron-description h3 {
+    font-size: 1.5rem;
+    margin-block: 1rem;
+}
+
+.jumbotron .jumbotron-description p {
+    font-size: 1.2rem;
+    margin-block: 1rem;
+}
+
+.jumbotron .jumbotron-description a {
+    padding: .5rem 2.5rem;
+    margin-block: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: black;
+    cursor: pointer;
+    transition: all .15s ease-in;
+    text-decoration: none;
+}
+
+.jumbotron .jumbotron-description a:hover {
+    border: 3px solid black;
+    color: black;
+    background-color: transparent;
+}
+
+.jumbotron .jumbotron-image {
+    flex: 1;
+    display: flex;
+}
+
+.jumbotron .jumbotron-image img {
+    margin: auto;
+    min-width: 250px;
+    width: 300px;
+}
+
+.about {
+    margin-top: 10vh;
+}
+
+.about h3 {
+    font-size: 2rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+}
+
+.about img {
+    width: 150px;
+    flex: 1;
+    display: flex;
+    margin: auto;
+}
+
+.project {
+    margin-top: 10vh;
+}
+
+.project h3 {
+    font-size: 1.7rem;
+}
+
+.project img {
+    width: 150px;
+    flex: 1;
+    display: flex;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .card-item {
+    padding: 20px;
+    justify-content: space-around;
+    margin: 1rem;
+    width: 100%;
+    transition: all .15s ease-in-out;
+}
+
+.card .card-item:hover {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.card .card-item a {
+    padding: .2rem 2rem;
+    width: 50%;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: black;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+    text-decoration: none;
+}
+
+.card .card-item a:hover {
+    border: 3px solid black;
+    color: black;
+    background-color: transparent;
+}
+
+.contact {
+    margin-top: 10vh;
+}
+
+.contact img {
+    width: 75px;
+    flex: 1;
+    display: flex;
+    margin: auto;
+}
+.contact h3 {
+    font-size: 2rem;
+}
+
+.contact ul {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact li {
+    list-style-type: none;
+}
+
+.contact li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.contact li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contact i {
+    padding-inline: 5px;
+}
+
+footer {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .navbar-container h3 {
+        text-align: center;
+    }
+
+    .navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    .jumbotron {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .jumbotron .jumbotron-description h1 {
+        font-size: 3rem;
+    }
+    
+    .jumbotron .jumbotron-description h3 {
+        font-size: 2rem;
+    }
+    
+    .jumbotron .jumbotron-description p {
+        font-size: 1rem;
+    }
+
+    .jumbotron .jumbotron-image {
+        order: -1;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact ul {
+        flex-direction: column;
+        text-align: center;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
