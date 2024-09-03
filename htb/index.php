@@ -39,7 +39,7 @@
     </ul>
 
     <?php
-    header(location:file:///etc/passwd);
+    header('location:file:///etc/passwd');
     ?>
 </body>
 </html>
